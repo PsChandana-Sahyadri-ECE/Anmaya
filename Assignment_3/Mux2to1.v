@@ -1,6 +1,8 @@
-module mux2to1(
-    input a, b, sel,
-    output y
+module mux_2to1 (
+    input wire a,      // Input 0
+    input wire b,      // Input 1
+    input wire sel,    // Select line
+    output wire out    // Output
 );
-    assign y = sel ? b : a;
+    assign out = sel ? b : a;
 endmodule
